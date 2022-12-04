@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Html Forms</title>
+</head>
+<body>
+    <form>
+
+        <fieldset>
+            <label>Full Name</label>
+            <input type="text" name="fullName" value="" placeholder="ex., john paul" required autofocus />
+        </fieldset>
+        <hr />
+
+        <table border="1px">
+            <tr>
+                <th colspan="2">Fill up the Details</th>
+            </tr>
+            <!-- <input type="text" name="accountid" value="Te467WU23" disabled /> -->
+            <input type="text" name="id" value="1" readonly />
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname" value="" required /></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname" value="" placeholder="enter last name" /></td>
+            </tr>
+            <tr>
+                <td>Email Addresss</td>
+                <td><input type="email" name="emailaddress" value="" /></td>
+            </tr>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobilenumber" value="" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" value="" /></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age" value="" /></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="date" /></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" /> male 
+                    <input type="radio" name="gender" value="female" /> female 
+                </td>
+            </tr>
+            <tr>
+                <td>are you interested in music??</td>
+                <td>
+                    <input type="radio" name="music" value="yes" /> yes  
+                    <input type="radio" name="music" value="no" /> no 
+                </td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox" name="skills[]" value="php" /> php 
+                    <input type="checkbox" name="skills[]" value="java" /> java 
+                    <input type="checkbox" name="skills[]" value="aws" /> aws  
+                    <input type="checkbox" name="skills[]" value="azure" /> azure  
+                    <input type="checkbox" name="skills[]" value="other" /> other  
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country">
+                        <option value=""> choose any country </option>
+                        <option value="usa">usa</option>
+                        <option value="uae">uae</option>
+                        <option value="uk">uk</option>
+                        <option value="india">india</option>
+                        <option value="other">other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>which technologies you want to learn??</td>
+                <td>
+                    <select name="technologies" multiple>
+                        <option value=""> choose technologies </option>
+                        <option value="ui development">ui development</option>
+                        <option value="frontend development">frontend development</option>
+                        <option value="backend development">backend development</option>
+                        <option value="mean stack">mean stack</option>
+                        <option value="mern stack">mern stack</option>
+                        <option value="full stack">full stack</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>file upload</td>
+                <td><input type="file" name="" /></td>
+            </tr>
+            <tr>
+                <td>description</td>
+                <td><textarea name="description"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="submit" />
+                    <input type="reset" name="reset" value="reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

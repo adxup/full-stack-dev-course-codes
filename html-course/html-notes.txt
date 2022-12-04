@@ -1,0 +1,79 @@
+- what is html??
+    - html full form: hyper text markup language
+    - html is used to create the structure of web page
+    - web page: a page which consists of different formats of content
+    - content: a content can be either a text, images, videos, audios, links, lists, forms etc., 
+
+- creating a basic html page
+- two important things that should know before creating the html page
+    1. element(s) / tag(s)
+    2. attribute(s)
+
+- what is element??
+    - an element is a name which gives the representation of a particular format of content
+
+    - there are 2 different types of elements:
+        1. block
+            <elementName>
+                ....
+                ....
+            </elementName>
+            ex., <p> ... </p>, <div> ... </div>, <h3> ... </h3>
+
+        2. inline
+            <elementName />
+            ex., <input />, <br />, <hr />
+
+- what is an attribute??
+    - an attribute is a name which adds the specifications / characteristics to the particular element
+
+    - there are 2 different types of elements:
+        1. block
+            <elementName attributeName = "itsValue" attributeName>
+                ....
+                ....
+            </elementName>
+            ex., <p style = ""> ... </p>, <div> ... </div>, <h3> ... </h3>
+
+        2. inline
+            <elementName attributeName = "itsValue" attributeName />
+            ex., <input type = "text" hidden />, <br />, <hr />
+
+*note: 
+    1. not all the elements works independently 
+    2. not all the attributes have values
+
+- head: 
+    1. title of the page
+    2. meta information of the page
+    3. adding the resources (css, javascript)
+
+- body: 
+    1. displaying the content of the page
+
+- formatting elements to a page
+    headings: h1 to h6
+    p, strong, u, i
+
+- create a link
+- displaying the images
+- table
+- listings
+    1. order
+    2. unorder
+    3. definition
+
+- form
+- semantic elements
+    main
+    header
+    footer
+    section
+    article
+    aside
+    nav
+    
+    audio
+    video
+
+    figure
