@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* blog styles */
+* {
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, 
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color:#EAECEE;
+}
+
+h1 {
+    font-family: inherit;
+    line-height: 48px;
+}
+
+p {
+    font-family: inherit;
+    line-height: 24px;
+    margin: 5px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clr {
+    clear: both;
+}
+
+/* page styles */
+.wrapper {
+    width: 992px;
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+.blogHorizontal {
+    width: 970px;
+    background-color: #FDEDEC;
+    border: 1px solid #78281F;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+
+.blogVertical {
+    width: 370px;
+    background-color: #FDEDEC;
+    border: 1px solid #78281F;
+    padding: 5px 10px;
+    margin: 5px;
+    float: left;
+}
+
+.blogHeading {
+    color:#E74C3C;
+}
+
+.blogGallery {
+    width: 125px;
+    float: left;
+    margin: 0px 5px 0px 0px;
+}
+
+a.blogReadMore {
+    color: #E74C3C;
+}

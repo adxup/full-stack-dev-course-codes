@@ -1,0 +1,37 @@
+body {
+    background-color: #eaecee;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+div {
+    background-color: #FBEEE6;
+    border: 1px solid #6E2C00;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+/* class */
+div.customDiv {
+    background-color: #EBF5FB;
+    border: 1px solid #1B4F72;
+}
+
+.enhanceDiv {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 1px 1px #6E2C00;
+}
+
+li {
+    list-style: none;
+}
+
+/* id */
+#listItem {
+    text-decoration: underline;
+    background-color: #f9f0fc;
+}
+
+#enhanceList {
+    border: 1px solid #6E2C00;
+}

@@ -1,0 +1,41 @@
+- What is BEM??
+    - BEM stands for Block, Element, and Modifier.
+    - It is a Naming Convention for Css Class Names.
+
+- Benefits of BEM:
+    1. It is a Component Structure
+    2. Sets a Consistent Low - Level of Specificity for Styling Selectors
+
+- Advantages: 
+    1. Easy to Maintain
+    2. Class Names are Logical and Intutive
+    3. Eliminates Nested CSS Selectors
+
+- Dis-Advantages:
+    1. Do not go too Deep
+    2. The main rule should not use more than 2 Levels of Parent
+    3. Avoids SASS @extend
+
+- What exactly the letters B, E and M say:
+    - B: stands for Block. - The Parent Element of the Component is defined as a Block.
+    - E: stands for Element. - Inside of the Component may be One or More Children called Elements.
+    - M: stands for Modifier. - Either a Block or Element may have a variations signed by a Modifier
+
+    syntax:
+    [block]__[element]--[modifier]
+
+- BEM Methodology: 
+    - The BEM explains the writing Class Names Uniquely and Logically
+
+    - Block: 
+        Class Names Examples: .content {}, .menu {}, .search-form {}
+        Concept: header, container, menu, search
+
+    - Element: 
+        Class Names Examples: .content__article {}, .menu__item {}, .search-form__input {}
+        Concept: menu item, list item, header title
+
+    - Modifier: 
+        Class Names Examples: .content__article--featured {}, .menu__item--link {}, .search-form__input--icon {}
+        Concept: disabled, checked, highlight
+

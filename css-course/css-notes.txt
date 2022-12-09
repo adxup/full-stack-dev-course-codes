@@ -1,0 +1,58 @@
+- what is css??
+    - css full form is cascading style sheets
+    - the css is used to apply the styles to html web page
+    - the alignment of the web page contents
+
+- important thing: 
+    property and its value
+    propertyName: itsValue;
+
+    ex., color: red;
+    
+- there are 3 ways: 
+    1. inline 
+    2. embedded
+    3. external
+
+
+- applying the colors
+    - 256 colors
+    - red, green, blue
+
+    - there are 3 different ways
+        1. name : red, pink, violet, 
+        2. numerical : 
+            rgb(0, 0, 0);
+            rgb(255, 255, 255);
+            rgb(123, 198, 213);
+
+        3. hexadecimal : 
+            #... (3 chars)
+            #.... (4 chars)
+            #...... (6 chars)
+
+            chars: a - f; A - F; 0 - 9;
+            #a2f;
+            #d4fe;
+            #6ad8cd;
+
+- commenting
+    1. single line : // ..........
+    2. multi line : /* .... */
+
+
+- applying styles with custom names
+    1. class 
+    2. id 
+
+- creating a blog page
+- display and position property
+- position property
+- video background langing page
+
+- hovering effects to images
+- hovering effects to buttons
+
+- creating grid layout template + responsive + hovering effects
+
+
