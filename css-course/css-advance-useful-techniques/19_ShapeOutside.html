@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Outside</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .shape-outside {
+            width: 50%;
+            padding-right: 10px;
+        }
+
+        .shape-outside__circle {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #dc143c;
+            margin: 25px 25px 5px 0px;
+            float: left;
+            shape-outside: circle();
+        }
+    </style>
+</head>
+<body>
+    <section class="shape-outside">
+        <div class="shape-outside__circle"></div>
+
+        <h2>Shape Outside Css Property</h2>
+        
+        <p>In this article, I’d like to reacquaint you with the humble workhorse of communication that is the paragraph. Paragraphs are everywhere. In fact, at the high risk of stating the obvious, you are reading one now. Despite their ubiquity, we frequently neglect their presentation. This is a mistake.</p>
+
+        <p>This is a mistake. Here, we’ll refer to some time-honored typesetting conventions, with an emphasis on readability, and offer guidance on adapting them effectively for devices and screens. We’ll see that the ability to embed fonts with @font-face is not by itself a solution to all of our typographic challenges.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Fonts</title>
+    <style>
+        
+        body {
+            background: #23074d;
+            overflow: hidden;
+        }
+
+        @font-face {
+            font-family: 'quicksandregular';
+            src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+                url('fonts/quicksand-regular-webfont.woff') format('woff');
+            font-weight: 300 700;
+            font-style: normal;
+            font-stretch: 1% 150%;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            margin: 0;
+            width: 100%;
+            font-size: 12vw;
+            font-stretch: 150%;
+            font-weight: 700;
+            font-family: 'quicksandregular';
+            color: #7bd70d;
+            white-space: nowrap;
+            transition: font-weight 250ms ease-out, font-stretch 250ms ease-out;
+            text-shadow: -10px -1px 0 #f3deaf;
+        }
+
+        span {
+            font-size: 8vw;
+            font-weight: 300;
+            font-stretch: 1%;
+            transition: all 250ms ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variable <span>Fonts</span></h1>
+</body>
+</html>

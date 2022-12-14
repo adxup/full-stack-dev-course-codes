@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Properties and Values</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font: 1.2em Helvetica, sans-serif;
+        }
+
+        body {
+            padding: 40px;
+            background-color: #fefefe;
+            color: rgb(108, 91, 123);
+        }
+
+        .controls {
+            background-color: rgba(0, 0, 0, .1);
+            padding: 10px;
+            border-radius: .5em;
+            border: 1px solid rgba(0, 0, 0, .2);
+            margin: 0 0 2em 0;
+        }
+
+        .controls select {
+            font-size: .9em;
+            background-color: transparent;
+            border: none;
+        }
+
+        #container {
+            writing-mode: horizontal-tb;
+        }
+
+        .box {
+            border: .5px solid rgb(108, 91, 123);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .logical {
+            block-size: 100px;
+            inline-size: 200px;
+        }
+
+        .physical {
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <select id="writingMode">
+            <option value="horizontal-tb">horizontal-tb</option>
+            <option value="vertical-lr">vertical-lr</option>
+            <option value="vertical-rl">vertical-rl</option>
+        </select>
+    </div>
+
+    <div id="container">
+        <div class="box logical">
+            The block-size is 100 pixels, and inline-size is 200px 
+        </div>
+
+        <div class="box physical">
+            The block height is 100 pixels, and width is 200px 
+        </div>
+    </div>
+</body>
+</html>
