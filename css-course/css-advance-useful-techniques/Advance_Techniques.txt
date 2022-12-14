@@ -5,6 +5,7 @@
 5. Gradients and Text
 6. Css Keyframes (Animations)
 7. Styling Broken Images
+
 8. Truncate Strings
 9. Variables
 10. Full Heigh Containers
@@ -17,9 +18,23 @@
     Linear Gradient Masking
     Radial Gradient Masking
     Masking with Images
+
 17. Zoom on Hover
 18. Scroll Snapping
 19. Shape Outside
 20. Variable Fonts
 21. Initial Letter
 22. Logical Properties and Values
+
+23. SubGrids
+24. Psuedo Classes
+    :hover
+25. :active
+26. Psuedo Elements
+    ::first-letter
+    ::before
+    ::after
+27. Z-index
+28. Minify
+29. User Interface
+30. Outline Offset
