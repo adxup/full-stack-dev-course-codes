@@ -4,6 +4,8 @@
 
 Html Playlist: https://www.youtube.com/watch?v=1-H00mkuTUc&list=PLblfiyrPpKeqYud9UzgspB7IQ3dG_CnOR
 
+Indexes wise: 
+
 1. Html Introduction, Elements and Attributes, Formatting Elements
 https://www.youtube.com/watch?v=1-H00mkuTUc&list=PLblfiyrPpKeqYud9UzgspB7IQ3dG_CnOR&index=1
 
@@ -23,6 +25,8 @@ https://www.youtube.com/watch?v=szPIn_Z8Opc&list=PLblfiyrPpKeqYud9UzgspB7IQ3dG_C
 # CSS Course Youtube Links
 
 Css Playlist: https://www.youtube.com/watch?v=r5vlZ_MRRNE&list=PLblfiyrPpKeot2LwoiZpl7AJxksZook59
+
+Indexes wise: 
 
 1. What is CSS? Usage of CSS? Different ways of Applying Styles to HTML Content Page
 https://www.youtube.com/watch?v=r5vlZ_MRRNE&list=PLblfiyrPpKeot2LwoiZpl7AJxksZook59&index=1
