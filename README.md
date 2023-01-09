@@ -1,6 +1,6 @@
 # courses codes
 
-# HTML Youtube Links
+# HTML Course Youtube Links
 Html Part 1 - Html Introduction, Elements and Attributes, Formatting Elements
 https://www.youtube.com/watch?v=1-H00mkuTUc&list=PLblfiyrPpKeqYud9UzgspB7IQ3dG_CnOR&index=1
 
@@ -16,7 +16,8 @@ https://www.youtube.com/watch?v=IoGquejrDqw&list=PLblfiyrPpKeqYud9UzgspB7IQ3dG_C
 Html Part 5 - Difference between HTML4 and HTML5, Semantic Elements, Media Objects
 https://www.youtube.com/watch?v=szPIn_Z8Opc&list=PLblfiyrPpKeqYud9UzgspB7IQ3dG_CnOR&index=5
 
-# CSS Youtube Links
+
+# CSS Course Youtube Links
 Css Part 1 - What is CSS? Usage of CSS? Different ways of Applying Styles to HTML Content Page
 https://www.youtube.com/watch?v=r5vlZ_MRRNE&list=PLblfiyrPpKeot2LwoiZpl7AJxksZook59&index=1
 
@@ -67,3 +68,72 @@ https://www.youtube.com/watch?v=R3n5XAPHPwc&list=PLblfiyrPpKeot2LwoiZpl7AJxksZoo
 
 Css Part 11 - Advanced Techniques - SubGrids, Psuedo Classes and Elements, Minify Animation - Part 4
 https://www.youtube.com/watch?v=WjpqAQgbOUQ&list=PLblfiyrPpKeot2LwoiZpl7AJxksZook59&index=17
+
+
+# JAVASCRIPT Course Youtube Links
+Javascript Playlist:
+https://www.youtube.com/watch?v=cJgyZIiDoUc&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj
+
+Indexes wise:
+1. Javascript - What is Javascript, Introduction, Data Types, Display Data
+https://www.youtube.com/watch?v=cJgyZIiDoUc&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=1
+
+2. Javascript - Comments, Identifiers, Keywords, Variables in Javascript
+https://www.youtube.com/watch?v=ERBPvWtGr-Y&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=2
+
+3. Javascript - Operators in Javascript, Decision Making Statements, Loop Statements
+https://www.youtube.com/watch?v=LhntyGDtgo4&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=3
+
+4. Javascript - Loops and Arrays in Javascript, Javascript Functions Basics
+https://www.youtube.com/watch?v=RtvkzjX_Y_Q&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=4
+
+5. Javascript - Javascript Functions, Passing Parameters, Return Statement, Anonymous, CallBack
+https://www.youtube.com/watch?v=iXQkWMX-DxQ&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=5
+
+6. Javascript - DOM Nodes, DOM Selectors, DOM Methods in Javascript
+https://www.youtube.com/watch?v=XQfOBIpf4RA&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=6
+
+7. Javascript - DOM Selectors, Css Selectors, Styling the DOM, Get and Set Attributes in Javascript
+https://www.youtube.com/watch?v=-vRZ92tnpcg&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=7
+
+8. Javascript - DOM Manipulation, Get and Set Methods, Html Elements Replace, DOM Navigation
+https://www.youtube.com/watch?v=72szrcOL5oo&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=8
+
+9. Javascript - Builtin Objects - Window, History, Navigator, Timers - setTimeout, setInterval
+https://www.youtube.com/watch?v=NKAmqMzh4f4&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=9
+
+10. Javascript - DateTime and Math Objects, Type Conversion, Event Listeners addEventListeners
+https://www.youtube.com/watch?v=4T1-Zv1KCTk&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=10
+
+11. Javascript - Event Capturing and Bubbling, preventDefault(), apply(), call(), Hoisting
+https://www.youtube.com/watch?v=kcxLIJJujDU&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=11
+
+12. Javascript - Nested Functions, Closures, useStrict, Getter and Setter Functions, JSON
+https://www.youtube.com/watch?v=sGxLvTmR87c&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=12
+
+13. Javascript - What is Exception Handling try, catch, throw, finally, What is Regular Expressions
+https://www.youtube.com/watch?v=r2XcVh0c1bE&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=13
+
+14. Javascript - Form Validation for Username, Email, Password using Regular Expressions
+https://www.youtube.com/watch?v=Jm0TnhreFEo&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=14
+
+15. Javascript - What is a Cookie, How to Set Cookies, What is Ajax and use in Javascript
+https://www.youtube.com/watch?v=OP5JEXWWIyI&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=15
+
+16. Javascript - ECMAScript Features, Differences between Javascript and ECMAScript, Object Literals
+https://www.youtube.com/watch?v=jSBUdz-_fUw&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=16
+
+17. Javascript - Class and Object, Inheritance, Rest Parameters, Spread Operators, DeStructuring
+https://www.youtube.com/watch?v=dX7GMvS0j2k&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=17
+
+18. Javascript - Symbols, Promise, resolve(), reject(), catch(), finally keywords and methods.
+https://www.youtube.com/watch?v=IlaavnDu5L0&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=18
+
+19. Javascript - Promise, Async and Await with Promise, Iterators and Iterables in Javascript
+https://www.youtube.com/watch?v=MiTf2z1MZzE&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=19
+
+20. Javascript - What is Generators, How to Declare Generators, Generators with Iterators, Throw Method
+https://www.youtube.com/watch?v=QchSKv5izGA&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=20
+
+21. Javascript - Explanation About Map, WeakMap, Set, WeakSet & It's Operations
+https://www.youtube.com/watch?v=7rUb70_SZQE&list=PLblfiyrPpKeqBjcwigOL4aDTZS32kn6wj&index=21
