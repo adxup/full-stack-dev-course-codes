@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <script>
+            let num1 = 6;
+            let num2 = 9;
+
+            let res = 0;
+
+            document.write("the value of num1: " + num1 + "<br />");
+            document.write("the value of num2: " + num2 + "<br />");
+
+            // 1. arithmatic 
+                // binary: +, -, /, %, *
+                res = (num1 * num2);
+                document.write("the value of res: " + res + "<br />");
+
+                // unary: ++, --
+                document.write("the value of num1 before ++: " + num1 + "<br />");
+                num1++; // num1 = num1 + 1
+                document.write("the value of num1 after ++: " + num1 + "<br />");
+
+                document.write("the value of num2 before --: " + num2 + "<br />");
+                --num2; // num2 = 1 - num2
+                document.write("the value of num2 after --: " + num2 + "<br />");
+
+            // 2. assignment: +=, -=, *=, /=, %=
+            document.write("the value of num1 before +=: " + num1 + "<br />");
+            num1 += 5; // num1 = num1 + 5;
+            document.write("the value of num1 after +=: " + num1 + "<br />");
+
+            document.write("the value of num2 before +=: " + num2 + "<br />");
+            num2 += num1; // num2 = num2 + num1;
+            document.write("the value of num2 after +=: " + num2 + "<br />");
+
+            let x = 5;
+            let y = "5";
+            let z = 5.0;
+
+            document.write("the value of x: " + x + ", the datatype of x: " + typeof x + "<br />");
+
+            document.write("the value of y: " + y + ", the datatype of y: " + typeof y + "<br />");
+
+            document.write("the value of z: " + z + ", the datatype of z: " + typeof z + "<br />");
+
+            // 3. comparison (relational): ==, !=, <, >, ===, !==
+            res = (x == y);
+            document.write("the value of res: " + res + "<br />");
+
+            res = (x === y);
+            document.write("the value of res: " + res + "<br />");
+
+            // 4. conditional (ternary): () ? : 
+            res = ((x === z) ? ('the x and z datatypes are same') : ('the x and z datatypes are not same'));
+            document.write("the value of res: " + res + "<br />");
+
+            // 5. logical: &&, ||, !
+            res = ((z !== y) && (x > y));
+            document.write("the value of res: " + res + "<br />");
+
+            res = ((z !== y) || (x > y));
+            document.write("the value of res: " + res + "<br />");
+
+            res = !((z !== y) && (x > y));
+            document.write("the value of res: " + res + "<br />");
+
+            res = !((z !== y) || (x > y));
+            document.write("the value of res: " + res + "<br />");
+        </script>
+    </div>
+</body>
+</html>

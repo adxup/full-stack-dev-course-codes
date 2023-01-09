@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // global variable
+        var counter = 0;
+
+        function makeCounter() {
+            return counter += 1;
+        }
+
+        console.log(`makeCounter(): ${makeCounter()}`);
+        console.log(`counter: ${counter}`);
+
+        console.log(`makeCounter(): ${makeCounter()}`);
+
+        counter = 10;
+        console.log(`counter: ${counter}`);
+
+        function makeCounter1() {
+            // local variable
+            var counter1 = 0;
+            return counter1 += 1;
+        }
+
+        console.log(`makeCounter1(): ${makeCounter1()}`);
+        console.log(`makeCounter1(): ${makeCounter1()}`);
+
+        // closure function
+        function myCounter3() {
+            var counter3 = 0;
+            
+            function innerFunc() {
+                counter3 += 1;
+                return counter3;
+            }
+
+            return innerFunc();
+        }
+
+        console.log(`myCounter3: ${myCounter3()}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

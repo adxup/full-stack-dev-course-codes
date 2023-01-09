@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style>
+        #intro {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+    </style>
+
+    <script src="scripts.js"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <p id="intro" style="color: red; font-size: 20px;">this is a para with id - intro  and with inline styles </p>
+
+    <div id="info" class="disabled">it is a div, with id - info, and class disabled </div>
+
+    <script>
+        // setting the inline styles on elements
+        var elem = document.getElementById("intro");
+
+        // applying the styles on elements
+        elem.style.textAlign = "right";
+        elem.style.textDecoration = "line-through";
+
+        // getting the styles from elements
+        document.write(`color: ${elem.style.color} <br />`);
+        document.write(`fontSize: ${elem.style.fontSize} <br />`);
+
+        // getComputedStyle()
+        var styles = window.getComputedStyle(elem);
+        document.write(`color: ${styles.getPropertyValue("color")} <br />`);
+        document.write(`color: ${styles.getPropertyValue("font-size")} <br />`);
+
+        // adding the css class's to elements
+        var elem = document.getElementById("info");
+
+        // className
+        elem.className = "note";
+        elem.className += " highlight";
+
+        // classList
+        elem.classList.add("scrum");
+        elem.classList.add("aws");
+
+        // remove
+        elem.classList.remove("note");
+
+        // toggle
+        elem.classList.toggle("java");
+        elem.classList.toggle("scrum");
+
+        if(elem.classList.contains("aws")) {
+            document.write("the specified class exists on the element");
+        } else {
+            document.write("the specified class does not exists on the element");
+        }
+    </script>
+</body>
+</html>

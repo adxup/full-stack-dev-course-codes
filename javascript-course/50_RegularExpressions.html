@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <script>
+        // constructor 
+        //var regex = new RegExp("/^mr\.$/");
+
+        // literal
+        //var regex = /^mr\.$/;
+
+        // pattern matching
+        //., *, +, [], {}, (), ^, |, \
+
+        // character classes
+        //[abc], [^abc], [a-z], [A-Z], [0-9], [\.\-\'\"\@\#\$]
+
+        // repeatition quantifiers
+        //p+, p*, p?, p{2}, p{2,4}, p{2,}, p{,2} 
+
+        // position anchors
+        //^p, p$, p*
+
+        // modifiers
+        //g, i, m (^, $), o, (expr), s (,)
+
+        var str1 = "jOhn Is leAviNg to CanAda";
+        document.write(`str1: ${str1} <br />`);
+
+        var regex = /nA/;
+        if(regex.test(str1)) {
+            document.write(`its matched`);
+        } else {
+            document.write(`no, its not matched`);
+        }
+    </script>
+</body>
+</html>

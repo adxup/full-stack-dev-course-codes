@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title"> heading </h1>
+
+        <hr />
+
+        <p id="hint"> <span>para</span> 1 </p>
+        <p id="hint2"> para 2 </p>
+    </div>
+
+    <script>
+        // navigating between the DOM Nodes
+        var main = document.getElementById("main");
+
+        document.write(main.firstChild.nodeName);
+        console.log(main.firstChild.nodeName);
+
+        var hint = document.getElementById("hint");
+        document.write(hint.firstChild.nodeName);
+
+        var hint2 = document.getElementById("hint2");
+        document.write(hint.firstChild.nodeName);
+
+        // apply styles
+        main.firstElementChild.style.color = "red";
+        hint.firstElementChild.style.color = "blue";
+    </script>
+</body>
+</html>

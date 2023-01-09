@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+        /*
+            // throwing Errors
+            throw 3736;
+            throw "invalid value";
+            throw true;
+            throw {
+                name: "invalidParameter", 
+                message: "parameter is not a valid"
+            };
+
+            throw new Error("sending error message");
+
+
+            // error Types
+            // rangeError
+            var num = 13.65;
+            num.toFixed(200);
+
+            // referenceError
+            var firstName = "john";
+            alert(lastName);
+
+            // syntaxError
+            var arr1 = ["john", "david", "james"];
+            alert(arr1.slice(1));
+
+            // typeError
+            num = 125;
+            num.toLowerCase();
+
+            // URIError
+            a = "%e6%36%2d5"
+            decodeURI(a)
+
+            a = "http://www.google.com";
+            decodeURI(a);
+
+            b = "\u3x00"
+        */
+        var num = 12.6465;
+        num = num.toFixed(2);
+        alert(num);
+
+        function rangeErrorFunc() {
+            try {
+                var num = 13.65;
+                if(num.toFixed(200)) {
+                    alert(num);
+                } else {
+                    throw new Error("its an rangeError");
+                }
+            } catch(err) {
+                alert(err);
+            }
+        }
+
+        rangeErrorFunc();
+
+
+        function doAction() {
+            let num1 = 0;
+            let num2 = 24;
+
+            let res = 0;
+
+            try {
+                res = (num1 * num2);
+                if(res) {
+                    document.getElementById("getRes").innerHTML = res;
+                } else {
+                    throw new Error("there might be something invalid data");
+                }
+            } catch(error) {
+                document.getElementById("getRes").innerHTML = error;
+            }
+        }
+
+        function checkValid() {
+            var num = prompt("enter any number between 1 o 10");
+            var startTime = Date.now();
+
+            try {
+                if(num > 0 && num <= 10) {
+                    alert(`pow of: ${Math.pow(num, num)}`);
+                } else {
+                    throw new Error("an invalid number");
+                }
+            } catch(err) {
+                alert(err);
+            } finally {
+                var execTime = ((Date.now()) - startTime);
+                alert(`program ends: ${execTime} ms`);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button type="button" onclick="doAction()"> do action </button>
+
+    <button type="button" onclick="checkValid()"> check valid </button>
+    <div id="getRes"></div>
+</body>
+</html>

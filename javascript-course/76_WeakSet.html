@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Declare the weakSet
+        const weakSet = new WeakSet();
+        // console.log('weakSet');
+
+        // to access the weakSet, you need to initialize the values
+        // console.log(weakSet);
+
+        let Obj = {
+            message: "hi, ", 
+            sendMessage: true
+        };
+
+        // weakSet.add(Obj);
+        // console.log('weakSet');
+        // console.log(weakSet);
+
+        const weakSet2 = new WeakSet();
+        weakSet2.add(Obj);
+        console.log('weakSet2');
+        console.log(weakSet2);
+
+        weakSet2.delete(Obj);
+
+        for(i of weakSet2) {
+            console.log(i);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

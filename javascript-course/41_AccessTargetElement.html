@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style>
+        div, p, a {
+            padding: 15px 30px;
+            display: block;
+            border: 1px solid #000;
+            background-color: #fef;
+        }
+    </style>
+
+    <script src="scripts.js"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div id="wrap">DIV
+        <p id="hint">P
+            <a href="#">A</a>
+        </p>
+    </div>
+
+    <script>
+        var div = document.getElementById("wrap");
+        div.onclick = function(event) {
+            setTimeout(() => {
+                alert(`target: ${event.target.tagName}, the tagname: ${this.tagName}`);
+            }, 0)
+        }
+    </script>
+</body>
+</html>

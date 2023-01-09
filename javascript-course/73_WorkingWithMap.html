@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // what is a map?
+        // it is also one of the ES6 Feature
+        // The ES6 Feature have 2 new Data Structures:
+        // 1. Map & 2. WeakMap
+
+        // Map: It is similar to Objects., - allows to store the Elements in a Key and Value pair
+
+
+        // Create a Map?
+        const map1 = new Map();
+        console.log(map1);
+
+        // insert the Item into a Map
+        map1.set('info', {name: 'jack', age: 23});
+
+        // access the Map Item
+        console.log(map1);
+
+        // Creating a Map with Set
+        let set1 = new Set([1, 4, 5]);
+
+        let map2 = new Map();
+        map2.set('data', set1);
+
+        console.log(`map2 - has`);
+        console.log(map2.has('data'));
+
+        console.log(`map2 - get`);
+        console.log(map2.get('data'));
+
+        console.log(`map - size`);
+        console.log(map2.size);
+
+        // iterate through a Map
+        let map3 = new Map();
+        map3.set('name', 'john');
+        map3.set('age', 64);
+
+        // for of
+        console.log('for of');
+        for(let[key, value] of map3) {
+            console.log(key + '=>' + value);
+        }
+
+        // forEach
+        console.log('forEach');
+        map3.forEach(function(value, key) {
+            console.log(key + '=>' + value);
+        });
+
+        // Iterate over Map Keys
+        console.log('iterate with keys');
+        for(let key of map3.keys()) {
+            console.log(key);
+        }
+
+        // Iterate with Values
+        console.log('iterate with values');
+        for(let value of map3.values()) {
+            console.log(value);
+        }
+
+        // Iterate with Entries
+        for(let elem of map3.entries()) {
+            console.log(`${elem[0]}: ${elem[1]}`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

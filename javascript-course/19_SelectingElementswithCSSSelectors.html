@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Tea</li>
+        <li class="tick">Coffee</li>
+        <li>Bread</li>
+        <li>Snacks</li>
+    </ul>
+
+    <script>
+        // selecting elements with css selectors
+        var matches = document.querySelectorAll("li");
+        document.write(`the no of selected elements: ${matches.length} <br />`);
+
+        // var matches = document.querySelectorAll("li.tick");
+        // document.write(`the no of selected elements: ${matches.length} <br />`);
+
+        // for(var elem of matches) {
+        //     elem.style.backgroundColor = "grey";
+        //     document.write(`item value: ${elem.innerHTML} <br />`);
+        // }
+
+        for(var elem in matches) {
+            matches[elem].style.backgroundColor = "grey";
+            document.write(`item value: ${matches[elem].innerHTML} <br />`);
+        }
+
+    </script>
+
+</body>
+</html>

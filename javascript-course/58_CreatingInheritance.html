@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        class Person {
+            constructor(pId, pName) {
+                this.pId = pId;
+                this.pName = pName;
+            }
+        }
+
+        class Employee extends Person {
+            constructor(pId, pName, empCode, empDesg, empSalary) {
+                super(pId, pName);
+                this.empCode = empCode;
+                this.empDesg = empDesg;
+                this.empSalary = empSalary;
+            }
+
+            getEmp() {
+                document.getElementById("showEmp").innerHTML += `
+                    Employee Details are: <br />
+                    ------------------------------- <br />
+                    Person Details: { <br />
+                        PersonId: ${this.pId} <br /> 
+                        PersonName: ${this.pName} <br />
+                    } <br />
+
+                    Employee Data: { <br />
+                        EmployeeCode: ${this.empCode} <br /> 
+                        EmployeeDesignation: ${this.empDesg} <br /> 
+                        EmployeeSalary: ${this.empSalary} <br />
+                    } <br />
+                `;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="showEmp"></div>
+
+    <script>
+        let emp1 = new Employee(1, "john", "emp5483", "hr", "$3673");
+        emp1.getEmp();
+
+        let emp2 = new Employee(2, "paul", "emp7434", "dev", "$3246");
+        emp2.getEmp();
+    </script>
+</body>
+</html>

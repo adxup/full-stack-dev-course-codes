@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        function myFunc() {
+            console.log(`this func executed after 1s <br />`);
+        }
+
+        function showTime() {
+            var curDt = new Date();
+            document.getElementById("clock").innerHTML = curDt;
+        }
+
+        // setTimeout
+        // setTimeout(myFunc, 1000);
+
+        // setInterval
+        setInterval(showTime, 1000);
+
+        var timeOutId;
+
+        function delayedAlert() {
+            timeOutId = setTimeout(myFunc, 1000);
+        }
+
+        delayedAlert();
+
+        // clearTimeout
+        clearTimeout(timeOutId);
+    </script>
+</head>
+<body>
+    <div id="clock"></div>
+</body>
+</html>

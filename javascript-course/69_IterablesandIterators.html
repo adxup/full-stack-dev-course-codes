@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <script>
+        // iterables and iterators
+        
+        // javascript provides a protocol to iterate over data structures
+        // this protocol defines how these data structures are iterated over using the for.. of loops
+
+        // the protocol is splitted into 2 parts
+        // iterable and iterators
+
+        // what is iterables
+        // the data structures that have the Symbol.iterator() method as called iterables ex., arrays, strings, sets etc., 
+
+        // what is iterator
+        // an iterator is an object that is returned by the Symbol.iterator() method. 
+        // the iterator protocol provides the next() method to access each element of the iterables (data structures) one at a time.
+
+        // declaration of an array
+        const arr = [1, "john", 9, 3];
+
+        // calling the Symbol.iterator() method
+        const arrIterator = arr[Symbol.iterator]();
+
+        // gives array iterator
+        console.log(`arrIterator: ${arrIterator}`);
+
+        const str = "hello";
+        const strIterator = str[Symbol.iterator]();
+        console.log(`strIterator: ${strIterator}`);
+
+        const nums = [8, 5, 2, 9];
+        // for(let n of nums) {
+        //     console.log(`n: ${n}`);
+        // }
+
+        for(let n of nums[Symbol.iterator]()) {
+            console.log(`n: ${n}`);
+        }
+
+        const str2 = "world";
+        for(let s of str2[Symbol.iterator]()) {
+            console.log(`s: ${s}`);
+        }
+
+        // the next() method
+        /*
+            the iterator object has a next() method that returns the 'next' item in the sequence. the next() method contains 2 properties: value and done.
+
+            value: the value property can be of any data type and represents the current value in the sequence.
+
+            done: the done property is a boolean value that indicates whether the iteration is complete or not.
+        */
+
+        const arr1 = ["j", "u", "w", "m", "a"];
+        let arrIterator2 = arr1[Symbol.iterator]();
+        console.log(arrIterator2.next());
+        console.log(arrIterator2.next());
+        console.log(arrIterator2.next());
+        console.log(arrIterator2.next());
+        console.log(arrIterator2.next());
+        console.log(arrIterator2.next());
+
+        // use defined iterator
+        // next()
+
+        function displayElement(arr) {
+            // to update the iteration
+            let n = 0;
+
+            return {
+                // implementation of next() function
+                next() {
+                    if(n < arr.length) {
+                        return {
+                            value: arr[n++], 
+                            done: false
+                        }
+                    }
+
+                    return {
+                        value: undefined, 
+                        done: true
+                    }
+                }
+            }
+        }
+
+        const arr2 = ["m", "o", "f", "p", "g"];
+        const arr2Iterator = displayElement(arr2);
+        console.log(arr2Iterator.next());
+        console.log(arr2Iterator.next());
+        console.log(arr2Iterator.next());
+        console.log(arr2Iterator.next());
+        console.log(arr2Iterator.next());
+        console.log(arr2Iterator.next());
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        var dt = new Date();
+        document.write(`date: ${dt} <br />`);
+
+        var dt = new Date(2022, 11, 25, 12, 30, 00);
+        document.write(`date: ${dt} <br />`);
+
+        var dt = new Date("23 Dec 2022");
+        document.write(`date: ${dt} <br />`);
+
+        var dt = new Date(12346587545434);
+        document.write(`date: ${dt} <br />`);
+
+        var dt = new Date();
+        console.log(`toDateString(): ${dt.toDateString()}`);
+
+        document.write(`getDate(): ${dt.getDate()} <br />`);
+        document.write(`getDay(): ${dt.getDay()} <br />`);
+        document.write(`getUTCDay(): ${dt.getUTCDay()} <br />`);
+        document.write(`getTime(): ${dt.getTime()} <br />`);
+
+        document.write(`getFullYear(): ${dt.getFullYear()} <br />`);
+
+        dt.setFullYear(dt.getFullYear() + 2);
+        document.write(`getFullYear(): ${dt.getFullYear()} <br />`);
+
+        dt.setDate(dt.getDate() + 12);
+        document.write(`getDate(): ${dt} <br />`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

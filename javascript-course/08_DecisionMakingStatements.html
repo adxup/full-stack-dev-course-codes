@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Making Statements</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <script>
+            let a = 0;
+            
+            if(a) {
+                document.write("the value of a : " + a + " is valid<br />");
+            } else {
+                document.write("the value of a : " + a + " is invalid<br />");
+            }
+
+            if(a == 0) {
+                document.write("the value of a : " + a + " is equal to 0 <br />");
+            } else {
+                document.write("the value of a : " + a + " is not equal to 0 <br />");
+            }
+
+            let age = 27;
+            if(age < 18) {
+                document.write("the value of age : " + age + " is less than 18 <br />");
+            } else if(age >= 18 && age < 26) {
+                document.write("the value of age : " + age + " is in between the 18 and 26 <br />");
+            } else if(age >= 26 && age < 35) {
+                document.write("the value of age : " + age + " is in between the 26 and 35 <br />");
+            } else {
+                document.write("the value of age : " + age + " is greater than 35 <br />");
+            }
+
+            let productName = "laptop";
+            switch(productName) {
+                case "pen": 
+                    document.write("the productName: " + productName + " is matching with the case: pen <br />");
+                    break;
+
+                case "laptop": 
+                    document.write("the productName: " + productName + " is matching with the case: laptop <br />");
+                    break;
+
+                case "bottle": 
+                    document.write("the productName: " + productName + " is matching with the case: bottle <br />");
+                    break;
+                    
+                case "mouse": 
+                    document.write("the productName: " + productName + " is matching with the case: mouse <br />");
+                    break;
+                    
+                default: 
+                    document.write("none of the case is matching <br />");
+            }
+        </script>
+    </div>
+</body>
+</html>

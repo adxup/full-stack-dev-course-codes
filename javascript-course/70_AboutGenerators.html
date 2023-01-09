@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <script>
+        // what is a generator?
+        // the generator(s) provides a new way to work with 'functions' and 'iterators'
+
+        /*
+            1. you can STOP the execution of a function from anywhere inside the function.
+
+            2. and CONTINUE the execution code from a HALTED position
+        */
+
+        // Create a Generator: 
+        // to Create a Generators., you need to First Define a GENERATOR FUNCTION with Function Symbol '*' ex., function* myFunc() {}
+
+        // generatorFun with out any Arguments
+        function* generatorFunc() {
+            // return 'hello' at first next() method
+            let x = yield 'hello';
+            // console.log(`the code executes before the yield`);
+            // yield 100;
+
+            // console.log(`the code executes before the yield`);
+            // yield 200;
+
+            // returns passed argument on the second next() method
+            console.log(x);
+            console.log('sometext');
+        }
+
+        const generator = generatorFunc();
+        console.log(generator.next());
+        console.log(generator.next(15));
+        console.log(generator.next());
+
+        // there are some builtin methods: 
+        // next() - returns a value of an Object, 
+        // return() - returns a value and terminates the execution
+        // throw() - throws an error and terminates the execution
+        // yield - returns a value and ready to move to further steps in the function definition
+    </script>
+</body>
+</html>

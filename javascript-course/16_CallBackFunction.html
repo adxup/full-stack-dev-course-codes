@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        function myDisp(v) {
+            document.write("sum of 2 numbers: " + v + "<br />");
+        }
+        function myCalc(n1, n2, callBack) {
+            let r = (n1 + n2);
+            callBack(r);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <script>
+            myCalc(2, 6, myDisp);    
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+* {
+    margin: 0px auto;
+}
+
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-color: #cecece; */
+    background-color: #fff;
+}
+
+.container {
+    width: 992px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 15px;
+}
+
+p {
+    font-family: inherit;
+    font-size: 16px;
+    color: black;
+}
+
+.cnt {
+    text-decoration: underline;
+    line-height: 24px;
+}

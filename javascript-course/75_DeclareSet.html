@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Create a Set
+        const set1 = new Set();
+        console.log('set data');
+        console.log(set1);
+
+        // Set with Multiple Types of Values
+        const set2 = new Set([1, 'hello', {count: true}]);
+        console.log('Accessing the set2');
+        console.log(set2);
+
+        const set3 = new Set([5, 9, 2]);
+        console.log('set3 items');
+        console.log(set3);
+
+        console.log('has');
+        console.log(set3.has());
+
+        console.log('values()');
+        console.log(set3.values());
+
+        console.log('entries()');
+        console.log(set3.entries());
+
+        // Adding New Element
+        set3.add(7);
+        console.log('set3 items');
+        console.log(set3);
+
+        // Deleting the Existing Element
+        set3.delete(9);
+        console.log('set3 items');
+        console.log(set3);
+
+        // Iterate Sets
+        for(let i of set3) {
+            console.log(i);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

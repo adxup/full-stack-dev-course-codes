@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        function doSum(a, b) {
+            let r = 0;
+            r = (a + b);
+            return r;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <script>
+            let a = 8;
+            let b = 5;
+            
+            let r = 0;
+
+            document.write("sum of 2 numbers: " + doSum(a, b) + "<br />");
+
+            a = 3;
+            b = 9;
+
+            r = doSum(a, b);
+            document.write("sum of 2 numbers: " + r + "<br />");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        function sortNames(...names) {
+            return names.sort();
+        }
+
+        function myFunc(a, b, ...nums) {
+            return nums;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        console.log(sortNames("john", "adam", "peter"));
+        console.log(sortNames("tony", "ricky"));
+
+
+        console.log(myFunc(2, 7, -8, 5, 8));
+        console.log(myFunc(-3, 8, 3, 9, 1, 5, -7));
+    </script>
+</body>
+</html>

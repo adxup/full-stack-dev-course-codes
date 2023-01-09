@@ -1,0 +1,265 @@
+-> What is Javascript??
+    - Javascript is the most popular and widely used client - side scripting language.
+    - Client - side refers to scripts that run within your Web Browser.
+    - Javascript is designed to Add the Interactivity and Dynamic Effects to the Web Pages by manipulating the content returned from a Web Server.
+    - Javascript is an Object - Oriented language, and it is also has some similarities in syntax to Java programming language.
+
+-> What you can do with Javascript??
+    1. Modify the content of a web page by adding or removing elements
+    2. Change the style and position of the elements
+    3. Monitor events like mouse click, hover, drag, keyboard change, focus
+    4. Perform and control transitions and animations
+    5. Create pop-ups to display information, warning, error
+    6. Operations based on user inputs and display the results
+    7. Validate user inputs
+
+-> In how many ways, that we cn use the code of Javascript??
+    - there are 3 ways
+    1. external
+    2. embedded
+    3. inline
+
+-> what type of data
+    - data types in Javascript
+        1. primitive data types
+            1. number : 0 - 9; 25, -98, 56.67, -96.56
+            2. string : a - z; A - Z; 0 - 9; all symbols; -  '  ... ', " ... ", ` ... `
+            3. boolean : true, false
+
+        2. non primitive data types
+            1. arrays
+            2. functions
+            3. class and objects
+
+
+-> displaying the data / value
+    1. document
+        document.write();
+        document.writeln();
+
+    2. dialog boxes
+        alert();
+        confirm();
+        prompt();
+
+    3. console
+        console.log();
+        console.warn();
+        console.error();
+
+-> comment
+    - it helps you to skip the statement(s) from the point of execution and it even gives information about the concept or something to the developer
+    - two ways of commenting
+    1. single line - // .........
+    2. multi line - /* .... */
+
+-> identifiers: 
+    - is a name which helps you to identify the concept
+    - and to declare the name we have some set of rules
+        1. the identifier can be min 2 characters to max 32 characters
+        2. the 1st character can be either a - z / A - Z / _
+        3. from the second character onwards it can be either a - z / A - Z / 0 - 9 / _
+        4. no spaces are allowed
+        5. no symbols are allowed except underscore
+        6. it can be a combination of lowercase and uppercase 
+
+    - examples: hello, _age, num1, num_sal, firstName, full_name
+
+-> keywords:
+    - a keyword can also called as reserved / builltin / predefined word
+    - the keyword used to reduce the coding time and gives the accurate or exact results according to its usage or functionality
+
+    - list of keywords: if, else, switch, while, try, async, promise
+
+-> variables: 
+    - a variable is a name which is used to hold the value
+    - it even can update the value for n no of times
+    - it can access where ever it is required
+
+    - to declare the variable we have 3 different ways
+    - with the keywords: var, let and const
+
+-> operators:
+    - an operator is a symbol which evaulate the expressions and give the results
+    - there are different types of operators
+        1. arithmatic 
+        2. assignment
+        3. comparison (relational)
+        4. conditional (ternary)
+        5. logical
+
+-> statements: 
+    1. decision making 
+        if, if else, if else if else, switch case 
+
+    2. loop 
+        for, while, do while
+
+-> arrays: 
+    - an array is a set of different data types of items / values / elements which can hold under one variable
+    - syntax: let idenName = [item1, item2, item3, .... , itemn];
+    - accessing of a particular item can be with index
+    - index: an index is a unique digit which starts from 0 to n - 1
+    - n: the total no of items in the given array
+    - accessing the item: idenName[indexNumber];
+    - example: idenName[0], idenName[2]
+
+-> function: 
+    - a function is a reusable set of statements
+    - function call and its definition
+    - passing parameters to functions
+    - function with return statement
+    - default arguments
+    - anonymous function
+    - arrow function
+    - call back function
+
+- dom: 
+    - dom stands for document object model
+    - document - referring to all the selectors: html element, class name and id
+    - model - data / value
+    - object - process
+
+    - dom takes too much memory space
+    - it directly updates the results in html
+
+- nodes:
+    - every selector in html is called as a nodes
+    - root node, element node, text node, attribute node
+
+- dom selectors
+    - selecting the elements / selectors through the below mentioned methods
+    - we have discussed the getElementById(), getElementsByClassName(), getElementsByTagName(), querySelectorAll()
+
+- selecting elements with css selectors
+    - querySelectorAll()
+    - for.. of, for.. in
+
+- styling dom elements
+    - assign and get the styles through inline style
+    - applying / adding / removing / toggling / contains
+        className, classList.add(), classList.remove(), classList.toggle(), classList.replace(), contains()
+
+- dom get and set attributes
+    - getAttribute(), setAttribute() and removeAttribute()
+
+- dom manipulation
+    - createElement(), createTextNode(), appendChild(), 
+    - insertBefore()
+
+- get and set the html contents
+    - insertAdjacentHTML() - beforebegin, beforeend, afterbegin, afterend
+
+- dom navigation
+    - firstChild, firstElementChild
+
+- different objects
+    - window, screen, location, loading new documents, history, navigator, cookie enabled, browser information
+    
+- timers
+    - setTimeout()
+    - setInterval()
+
+- date and time
+    - Date(), getDate(), getFullYear(), 
+    - setDate(), setFullYear()
+
+- math object
+    - PI, floor(), round(), random(), ceil()
+
+- type conversion
+    - conversion of one data type to another data
+
+- event listeners
+    - actions to selectors - onclick, onhover, onblur, etc., 
+    - addEventListener(), removeEventListener()
+
+- propogation:
+    - capturing
+    - bubbling
+
+- accessing the target element
+    - event.target.tagName
+
+- preventDefault()
+- borrowing methods
+    - call, apply
+
+- object literal
+    let user1 = {
+        userId: 2677, 
+        userName: "john"
+    };
+    
+- hoisting
+- nested functions and closures
+    - an inner function with its defintion inside the outer function - nested function
+    - returning the reference to the outer function from the inner function is called closure
+
+- getter and setter functions
+- strict mode 
+    "use strict"
+
+- json
+    - json full form - javascript object notation
+    - parse(), stringify() - JSON
+
+- exception / error handling:
+    - error: when the program wents wrong, that might stop your execution because of you to rectify the error and move forward successfully - all these things that can be done with javascript parser
+
+    - there are 2 types of errors: 
+    1. compile time errors / standard javascript errors - when especially one of the cause for compile time errors - is might be a syntax error etc., 
+
+    2. run time errors / logical errors - where we have expected something else but we are getting another one - business logic error 
+
+    to handle business logic / run time errors - we use the exception handling
+
+    - we have 4 keywords: 
+        try, catch, throw, finally
+
+    
+- regular expressions: 
+    - an expressions which helps you to check the given value is correct or incorrect
+    - we can implement the regular expressions in two different ways:
+        1. using constructor
+        2. using literal
+
+- form validation
+    text, email, password, number, etc.,
+
+- cookie
+    document.cookie
+
+- ajax
+    - AJAX stands for Asynchronous JavaScript And XML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with servers. 
+    
+    - It can send and receive information in various formats, including JSON, XML, HTML, and text files.
+
+- ecmascript
+    - let, for of, for in, arrow functions, default arguments
+
+- declaring the object using user defined method
+- declaring an object using user defined constructor and defining the class
+    class and object
+
+- inheritance
+- rest parameters
+- spread operators
+- destructuring
+
+- symbol
+    - es6 new primitive data type
+    - symbols are immutable (cannot be changed) and are unique.
+
+- promise
+- promise chaining resolve
+
+- async and await
+- iterables and iterators
+
+- generators
+- combination of generators and iterators
+- combination of generators and throw method
+
+- map
+

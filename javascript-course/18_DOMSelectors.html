@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <p id="mark">this is a para with id="mark"</p>
+    <p>this is another para with no id</p>
+
+    <p class="test">this is a para with class="test"</p>
+    <p class="block test">this is a para with class "block" and "test"</p>
+
+    <p>this is aother para with tagName</p>
+
+    <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li class="tick">Services</li>
+        <li>Portfolio</li>
+        <li>Contact Us</li>
+    </ul>
+
+    <script>
+        // selecting dom elements
+        
+        // selecting the topmost elements
+
+        // display the 'lang' attribute value of html element
+        document.write(`the html - lang attribute value: ${document.documentElement.getAttribute("lang")} <br />`);
+
+        // set the bg color of the body element
+        document.body.style.backgroundColor = "#f4f4f4";
+
+        // display the tagName of the head element's first child
+        document.write(`tagName of head Elements First Child: ${document.head.firstChild} <br />`);
+
+        document.write(`tagName of head Elements First Element Child: ${document.head.firstElementChild} <br />`);
+
+        document.write(`tagName of head Elements First Child Node Name: ${document.head.firstElementChild.nodeName} <br />`);
+
+        // selecting the elements by Id
+        var match = document.getElementById("mark");
+        document.write(`the selected element by Id: ${match} <br />`);
+        
+        match.style.backgroundColor = "#000";
+        match.style.color = "#fff";
+
+        // selecting the elements by class name
+        var matches = document.getElementsByClassName("test");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(`the no of elements of same class: ${matches.length} <br />`);
+
+        for(let i = 0; i < matches.length; i++) {
+            matches[i].style.backgroundColor = "lightblue";
+        }
+
+        // selecting the elements by tag name
+        var matches = document.getElementsByTagName("p");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(`the no of elements of same tag: ${matches.length} <br />`);
+
+        for(let i = 0; i < matches.length; i++) {
+            matches[i].style.backgroundColor = "blue";
+        }
+
+        // selecting the elements with css selectors
+        // selecting the elements by class name
+        var matches = document.querySelectorAll("li");
+        document.write(`the matches: ${matches} <br />`);
+        document.write(`the no of elements of same class: ${matches.length} <br />`);
+
+        for(let i = 0; i < matches.length; i++) {
+            matches[i].style.backgroundColor = "lightblue";
+        }
+    </script>
+</body>
+</html>

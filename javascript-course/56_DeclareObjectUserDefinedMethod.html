@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // setting the properties to respective objects
+        function UserDetails(firstName, lastName) {
+            // this is a keyword which is referring internally or dynamically the current running object
+            this.firstName = firstName;
+            this.lastName = lastName;
+
+
+            this.getUser = function() {
+                console.log(`getUser: firstName: ${this.firstName}, and lastName: ${this.lastName}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // declaring the objects
+        var user1 = new UserDetails("john", "paul");
+        console.log(`firstName: ${user1.firstName}, and lastName: ${user1.lastName}`);
+        user1.getUser();
+
+        var user2 = new UserDetails("adam", "steve");
+        console.log(`firstName: ${user2.firstName}, and lastName: ${user2.lastName}`);
+        
+        var user3 = new UserDetails("ricky", "point");
+        console.log(`firstName: ${user3.firstName}, and lastName: ${user3.lastName}`);
+    </script>
+</body>
+</html>

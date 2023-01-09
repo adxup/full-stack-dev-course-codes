@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // WeakMap
+        const weakMap = new WeakMap();
+        console.log('weakMap Object');
+        console.log(weakMap);
+
+        let obj = {};
+
+        // adding Object to WeakMap
+        weakMap.set(obj, 'hello');
+        console.log('weakMap Object with Info');
+        console.log(weakMap);
+
+        // Add other Data Types
+        weakMap.set(obj, 23);
+        console.log('weakMap Object with Info');
+        console.log(weakMap);
+
+        // has
+        console.log('has()');
+        console.log(weakMap.has(obj));
+
+        // get
+        console.log('get()');
+        console.log(weakMap.get(obj));
+
+        for(let i of weakMap) {
+            console.log(i);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

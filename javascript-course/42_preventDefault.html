@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <form method="post" action="process.py">
+        <input type="text" name="first_name" id="first_name" /> <br />
+        <input type="submit" name="submit" value="submit" id="submitBtn" />
+    </form>
+
+    <a href="http://www.google.com" id="myLink"> go to google </a>
+    <script>
+        var btn = document.getElementById("submitBtn");
+        
+        btn.addEventListener("click", function(event) {
+            var name = document.getElementById("first_name").value;
+            alert(`sorry, ${name} the preventDefault() won't let you to submit`);
+            event.preventDefault();
+        });
+
+        var a = document.getElementById("myLink");
+        a.addEventListener("click", function(event) {
+            alert(`sorry, we are not letting you to redirect`);
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

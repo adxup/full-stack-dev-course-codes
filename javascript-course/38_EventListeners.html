@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        function myFunc() {
+            document.write(`yes, user clicked on myBtn id <br />`);
+        }
+
+
+        function checkHover() {
+            document.write(`user placed a mouse on button <br />`);
+        }
+
+        function setHoverFunc() {
+            document.getElementById("myBtn").style.backgroundColor = "#f00";
+            document.getElementById("myBtn").style.color = "#fff";
+        }
+
+        function setNormalFunc() {
+            document.getElementById("myBtn").style.backgroundColor = "#fff";
+            document.getElementById("myBtn").style.color = "#f00";
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="myBtn"> click on btn </button>
+
+    <script>
+        var btn = document.getElementById("myBtn");
+        // btn.onclick = myFunc;
+        // btn.onmouseover = checkHover;
+
+        // addEventListener
+        btn.addEventListener("click", myFunc);
+        btn.addEventListener("mouseover", setHoverFunc);
+        btn.addEventListener("mouseout", setNormalFunc);
+
+        // removeEventListener
+        btn.removeEventListener("click", myFunc);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">this is heading with id - title</h1>
+        <p id="hint">this is para with id - hint</p>
+    </div>
+
+    <script>
+        // creating a new element
+        var newDiv = document.createElement("div");
+        
+        // create a text node
+        var newContent = document.createTextNode("hey, we are discussing about dom manipulation");
+
+        // adding the text node to the created div
+        newDiv.appendChild(newContent);
+
+        // get the current div
+        var currentDiv = document.getElementById("main");
+
+        // after the current div
+        document.body.appendChild(newDiv, currentDiv);
+
+        // before the current div
+        document.body.insertBefore(newDiv, currentDiv);
+    </script>
+</body>
+</html>

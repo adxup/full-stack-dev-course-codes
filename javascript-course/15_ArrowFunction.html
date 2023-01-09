@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+        // accessing arguments into the function definition
+        function getFullName(fName = "admin", lName = "demo") {
+            let fullName = "";
+            fullName = (fName + " " + lName);
+            document.write("the full Name : " + fullName + "<br />");
+        }
+
+        let userDetails = (uName = "admin", uEmail = "admin@gmail.com") => {
+            let makeString = `
+                userDetails <br />
+                ------------------------ <br />
+                uName: ${uName} <br />
+                uEmail: ${uEmail} <br />
+            `;
+            return makeString;
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <script>
+            // global variables
+            let firstName = "john";
+            let lastName = "paul";
+            
+            // passing parameters at the time of function call
+            getFullName(firstName, lastName);
+
+            firstName = "steve";
+            lastName = "adam";
+
+            getFullName(firstName);
+
+            getFullName();
+
+            let userName = "joseph";
+            let userEmail = "joseph@gmail.com";
+
+            let userData = "";
+
+            userData = userDetails(userName, userEmail);
+            document.write("the userData: " + userData + "<br />");
+
+            userName = "adam";
+            userEmail = "adam@gmail.com";
+
+            userData = "";
+
+            userData = userDetails(userName, userEmail);
+            document.write("the userData: " + userData + "<br />");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style></style>
+
+    <script src="scripts.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+    <script>
+        // async and await
+        // await: it is also one of the keyword in javascript
+        // it waits for the result from the Promise
+
+        let promise = new Promise(function(resolve, reject) {
+            setTimeout(function() {
+                resolve("promise resolved");
+            }, 2000);
+        });
+
+        async function awaitFunc() {
+            // wait untill the promise resolves
+            let result = await promise;
+            console.log(`result: ${result}`);
+            console.log('its completed');
+        };
+
+        awaitFunc();
+    </script>
+</body>
+</html>

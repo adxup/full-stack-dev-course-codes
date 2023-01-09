@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating the Common Code Page</title>
+    
+    <link rel="stylesheet" href="stylesheets.css">
+    <style>
+        #result {
+            width: 768px;
+            margin: 10px auto;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #fef;
+            line-height: 18px;
+        }
+    </style>
+
+    <script src="scripts.js"></script>
+    <script>
+        function displayData() {
+            // creating the XMLHTTPRequest object
+            var request = new XMLHttpRequest();
+
+            // instantiating the request object
+            request.open("GET", "https://www.google.com/search?q=ajax");
+
+            // defining the event listener for readyStateChange event
+            request.onreadystatechange = function() {
+                // check if the request is complete and success
+                if(this.readyState === 4 && this.status === 200) {
+                    // inserting the response from the server into html element
+                    document.getElementById("result").innerHTML = this.responseText;
+                }
+            };
+
+            request.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+
+    <button type="button" onclick="displayData()"> display data </button>
+
+</body>
+</html>
