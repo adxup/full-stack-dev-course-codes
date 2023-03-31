@@ -1,0 +1,27 @@
+- What is Bootstrap?
+    - It is a CSS Framework.
+    - Used to Create the Responsive Web Pages (Simpler to Complex)
+
+- Creating the Sample HTML and access the Bootstrap into HTML
+- Creating Layout:
+    1. Fixed
+    2. Fluid
+    3. BreakPoint
+    4. Multi Column 
+
+- Different Resolutions:
+    1. Xtra Small Device: <= 320px
+    2. Small Device: > 320px to <=576px
+    3. Medium Device: > 576px to <=768px
+    4. Large Device: > 768px to <=992px 
+    5. X- arge Device: > 992px to <=1200px
+
+- Bootstrap Classes:
+    .container
+        .row
+            .col-12
+
+    .col-sm-12
+    .col-md-12
+    .col-lg-12
+    .col-xl-12
