@@ -1,0 +1,126 @@
+/*
+This code creates a navigation menu with a responsive dropdown menu for the "Products" link. 
+When the screen width is less than or equal to 768 pixels.
+*/
+
+<nav>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+  <ul class="nav-menu">
+    <li><a href="#">Home</a></li>
+    <li>
+      <input type="checkbox" id="products-toggle">
+      <label for="products-toggle" class="nav-toggle-label">Products<span></span></label>
+      <ul class="nav-submenu">
+        <li><a href="#">Product 1</a></li>
+        <li><a href="#">Product 2</a></li>
+        <li><a href="#">Product 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+
+.nav-toggle-label {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-toggle-label span {
+    background-color: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+    width: 18px;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    background-color: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.2s ease-out;
+    width: 100%;
+  }
+
+  .nav-toggle-label span::before {
+    top: 5px;
+  }
+
+  .nav-toggle-label span::after {
+    top: -5px;
+  }
+
+  #nav-toggle:checked + .nav-menu {
+    display: block;
+  }
+
+  #nav-toggle:checked + .nav-menu .nav-toggle-label span {
+    background-color: transparent;
+  }
+
+  #nav-toggle:checked + .nav-menu .nav-toggle-label span::before {
+    transform: rotate(45deg);
+  }
+
+  #nav-toggle:checked + .nav-menu .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+  }
+
+  .nav-menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .nav-menu li {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .nav-submenu {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-submenu li {
+    display: block;
+  }
+
+  .nav-submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  #products-toggle:checked + .nav-submenu {
+    display: block;
+  }
+}
