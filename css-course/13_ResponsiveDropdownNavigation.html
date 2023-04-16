@@ -3,124 +3,139 @@ This code creates a navigation menu with a responsive dropdown menu for the "Pro
 When the screen width is less than or equal to 768 pixels.
 */
 
-<nav>
-  <input type="checkbox" id="nav-toggle">
-  <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
-  <ul class="nav-menu">
-    <li><a href="#">Home</a></li>
-    <li>
-      <input type="checkbox" id="products-toggle">
-      <label for="products-toggle" class="nav-toggle-label">Products<span></span></label>
-      <ul class="nav-submenu">
-        <li><a href="#">Product 1</a></li>
-        <li><a href="#">Product 2</a></li>
-        <li><a href="#">Product 3</a></li>
+    <nav class="jmenu">
+      <label for="menu-btn" class="jm-menu-btn jm-icon-menu"></label>
+      <input type="checkbox" id="menu-btn" class="jm-menu-btn" />
+      <ul class="jm-collapse">
+        <li><a href="javascript:void(0)">Home</a></li>
+        <li class="jm-dropdown">
+          <a href="javascript:void(0)">Categories</a>
+          <ul>
+            <li><a href="javascript:void(0)">Apples</a></li>
+            <li><a href="javascript:void(0)">Bananas and Pears</a></li>
+            <li><a href="javascript:void(0)">Oranges</a></li>
+          </ul>
+        </li>
+        <li><a href="javascript:void(0)">About</a></li>
+        <li><a href="javascript:void(0)">Contact</a></li>
       </ul>
-    </li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-</nav>
+    </nav>
 
-.nav-toggle-label {
-  display: none;
+body {
+  font: normal 1.125em/1.5 "Roboto", sans-serif;
+  background-color: #fafafa;
 }
 
-@media only screen and (max-width: 768px) {
-  .nav-toggle-label {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
+/* jmenu */
+/* JMenu 1.0 RC1 | MIT License | https://github.com/jamesjohnson280/JMenu */
+.jmenu {
+  background: #252525;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  line-height: 1;
+}
+input.jm-menu-btn,
+input[type="checkbox"].jm-menu-btn ~ .jm-collapse {
+  display: none;
+}
+input[type="checkbox"]:checked.jm-menu-btn ~ .jm-collapse {
+  display: block;
+}
+label.jm-menu-btn {
+  color: #959595;
+  cursor: pointer;
+  display: block;
+  padding: 16px 32px;
+}
+label.jm-menu-btn:hover {
+  color: #fff;
+}
+.jm-collapse {
+  border-top: 1px #959595 solid;
+}
+.jmenu li,
+.jmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jmenu a {
+  color: #959595;
+  display: inline-block;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+.jm-dropdown:hover a,
+.jmenu a:hover {
+  color: #fff;
+}
+.jmenu ul ul {
+  display: none;
+}
+.jm-dropdown:hover ul {
+  display: block;
+}
+.jm-dropdown ul {
+  background: #fff;
+  padding: 0;
+}
+.jm-dropdown ul a,
+.jm-dropdown:hover ul a {
+  color: #0072bc;
+}
+.jm-dropdown ul a:hover,
+.jm-dropdown:hover ul a:hover {
+  color: #000;
+}
+.jm-dropdown ul ul {
+  border-bottom: 1px #ccc solid;
+  border-top: 1px #ccc solid;
+  box-shadow: none;
+  margin-bottom: 16px;
+  max-width: 100%;
+  position: relative;
+}
+.jm-icon-dropdown {
+  border: solid #959595;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin: 0 0 3px 8px;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+li:hover .jm-icon-dropdown {
+  border-color: #fff;
+}
+.jm-icon-menu::before {
+  content: "\2630";
+}
+@media (min-width: 768px) {
+  .jmenu li {
+    display: inline-block;
+  }
+  .jmenu a {
+    padding: 16px;
+  }
+  .jm-dropdown {
     position: relative;
-    z-index: 1;
   }
-
-  .nav-toggle-label span {
-    background-color: #333;
+  .jm-dropdown li a {
     display: block;
-    height: 2px;
-    position: relative;
-    transition: background-color 0.2s ease-out;
-    width: 18px;
+    padding: 8px 16px;
+    white-space: nowrap;
   }
-
-  .nav-toggle-label span::before,
-  .nav-toggle-label span::after {
-    background-color: #333;
-    content: '';
-    display: block;
-    height: 100%;
+  .jm-dropdown ul {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+    padding: 8px 0;
     position: absolute;
-    transition: transform 0.2s ease-out;
-    width: 100%;
+    min-width: 100%;
   }
-
-  .nav-toggle-label span::before {
-    top: 5px;
-  }
-
-  .nav-toggle-label span::after {
-    top: -5px;
-  }
-
-  #nav-toggle:checked + .nav-menu {
-    display: block;
-  }
-
-  #nav-toggle:checked + .nav-menu .nav-toggle-label span {
-    background-color: transparent;
-  }
-
-  #nav-toggle:checked + .nav-menu .nav-toggle-label span::before {
-    transform: rotate(45deg);
-  }
-
-  #nav-toggle:checked + .nav-menu .nav-toggle-label span::after {
-    transform: rotate(-45deg);
-  }
-
-  .nav-menu {
+  input.jm-menu-btn,
+  label.jm-menu-btn {
     display: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 0;
   }
-
-  .nav-menu li {
-    display: block;
-    margin: 0;
-    width: 100%;
-  }
-
-  .nav-menu li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-  }
-
-  .nav-submenu {
-    display: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-submenu li {
-    display: block;
-  }
-
-  .nav-submenu li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-  }
-
-  #products-toggle:checked + .nav-submenu {
+  .jm-collapse,
+  input[type="checkbox"].jm-menu-btn ~ .jm-collapse {
     display: block;
   }
 }
